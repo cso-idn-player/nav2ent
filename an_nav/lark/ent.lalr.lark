@@ -1,0 +1,11 @@
+?start: block*
+
+
+block: "{" pair* "}"
+pair: string string
+
+string : ESCAPED_STRING
+
+%import common.ESCAPED_STRING
+%import common.WS
+%ignore WS
